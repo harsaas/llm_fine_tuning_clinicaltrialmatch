@@ -1,0 +1,31 @@
+.venv/
+.venv-*/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+storage/
+
+# Local Qdrant store / generated outputs
+trial_store.db/
+outputs/
+
+# Common caches
+.pytest_cache/
+.cache/
+.ipynb_checkpoints/
+
+# Project data/artifacts (keep repo lightweight)
+data/**
+!data/
+!data/processed_narratives/
+!data/processed_narratives/synthea_narratives.txt
+
+# Keep screenshots tracked
+# (do not ignore screenshots/)
+*.zip
+
+# Local OpenFDA Data Sets (Keep heavy files out of git repository tracking)
+data/ndc-download.json
+data/real_fda_cache.csv
+data/real_fda_validation.csv
